@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Université du Burundi - ITN</title>
+    <style>
+        /* Style général */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .departments, .students, .notes {
+            margin-top: 20px;
+        }
+
+        .departments div, .students div {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        .login-form {
+            max-width: 400px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        .login-form button {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .login-form button:hover {
+            background-color: #0056b3;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Université du Burundi</h1>
+        <h2>Institut de Technologie Numérique</h2>
+    </header>
+
+    <nav>
+        <a href="#departments">Départements</a>
+        <a href="#students">Étudiants</a>
+        <a href="#notes">Notes</a>
+        <a href="#login">Connexion</a>
+    </nav>
+
+    <section id="departments">
+        <h2>Départements</h2>
+        <div class="departments">
+            <div>
+                <h3>Génie Informatique</h3>
+                <img src="https://via.placeholder.com/400x200" alt="Génie Informatique">
+                <p>Développement logiciel, IA, bases de données.</p>
+            </div>
+            <div>
+                <h3>Systèmes Embarqués</h3>
+                <img src="https://via.placeholder.com/400x200" alt="Systèmes Embarqués">
+                <p>Microcontrôleurs, IoT, systèmes intégrés.</p>
+            </div>
+            <div>
+                <h3>Réseaux</h3>
+                <img src="https://via.placeholder.com/400x200" alt="Réseaux">
+                <p>Télécommunications, cybersécurité, administration réseau.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="students">
+        <h2>Liste des Étudiants</h2>
+        <table border="1" cellspacing="0" cellpadding="5" width="100%">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Prénom</th>
+                    <th>Département</th>
+                    <th>Année (BAC)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Nziza</td>
+                    <td>Jean</td>
+                    <td>Génie Informatique</td>
+                    <td>1ère BAC</td>
+                </tr>
+                <tr>
+                    <td>Niyonkuru</td>
+                    <td>Marie</td>
+                    <td>Systèmes Embarqués</td>
+                    <td>2ème BAC</td>
+                </tr>
+                <tr>
+                    <td>Habonimana</td>
+                    <td>Paul</td>
+                    <td>Réseaux</td>
+                    <td>3ème BAC</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="notes">
+        <h2>Notes des Étudiants</h2>
+        <p>Les notes sont accessibles uniquement via un compte sécurisé.</p>
+    </section>
+
+    <section id="login">
+        <h2>Connexion Étudiant</h2>
+        <div class="login-form">
+            <form>
+                <label for="username">Nom d'utilisateur :</label>
+                <input type="text" id="username" placeholder="Entrer votre nom d'utilisateur" required>
+                
+                <label for="password">Mot de passe :</label>
+                <input type="password" id="password" placeholder="Entrer votre mot de passe" required>
+                
+                <button type="submit">Se connecter</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Université du Burundi - Institut de Technologie Numérique</p>
+    </footer>
+</body>
+</html>
